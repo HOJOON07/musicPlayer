@@ -58,7 +58,7 @@ prev.addEventListener("click", function () {
     articleArr[active].classList.add("on");
     // console.log(active);
     // currentMusic = active;
-    el.querySelector("audio").pause();
+    el.querySelector("audio").pause(); //이전 버튼 누르면 재생하던 곡을 멈춤
     console.log(el);
   }
   articleArr[active].classList.remove("on");
@@ -80,7 +80,7 @@ next.addEventListener("click", function () {
     // console.log(articleArr);
 
     // console.log(articleArr[active]);
-    el.querySelector("audio").pause();
+    el.querySelector("audio").pause(); //다음 버튼을 누르면 재생하던 곡을 멈춤
     console.log(el);
   }
 
