@@ -102,7 +102,7 @@ for (let el of articleArr) {
     //   before.closest("article").querySelector("audio").pause();
     //   before.closest("article").querySelector(".pic").classList.remove("on");
     //   before = e.target;
-    // }
+    // }다음곡을 눌러도 음악 정지가 안되는 기능
 
     el.querySelector(".pic").classList.add("on");
     el.querySelector("audio").play();
@@ -112,7 +112,14 @@ for (let el of articleArr) {
     el.querySelector("audio").pause();
   });
 
-  reload.addEventListener("click", function () {
+  reload.addEventListener("click", function (e) {
+    // if (before === 0) {
+    //   before = e.target;
+    // } else if (before !== e.target) {
+    //   before.closest("article").querySelector("audio").pause();
+    //   before.closest("article").querySelector(".pic").classList.remove("on");
+    //   before = e.target;
+    // } 다음곡을 눌러도 음악 정지가 안되는 기능
     el.querySelector(".pic").classList.add("on");
     el.querySelector("audio").load();
     el.querySelector("audio").play();
