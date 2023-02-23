@@ -56,8 +56,10 @@ prev.addEventListener("click", function () {
     el.classList.remove("on");
 
     articleArr[active].classList.add("on");
-    console.log(active);
-    currentMusic = active;
+    // console.log(active);
+    // currentMusic = active;
+    el.querySelector("audio").pause();
+    console.log(el);
   }
   articleArr[active].classList.remove("on");
 });
@@ -82,8 +84,8 @@ next.addEventListener("click", function () {
     console.log(el);
   }
 
-  const pause = articleArr[active];
-  console.log(pause);
+  // const pause = articleArr[active];
+  // console.log(pause);
 });
 
 let before = 0;
